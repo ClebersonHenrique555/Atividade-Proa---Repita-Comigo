@@ -1,0 +1,39 @@
+<html>
+
+<head>
+        <script>
+
+ var nota1 = parseFloat(prompt("Digite a primeira nota: "));
+ var nota2 = parseFloat(prompt("Escreva a segunda nota: "));
+
+ var x;
+ while(x!=true){
+ if(nota1>=0 && nota1<=10){
+     x=true;
+ }else{
+    nota1 = parseFloat(prompt("Digite a primeira nota: "));
+    nota2 = parseFloat(prompt("Escreva a segunda nota: "));
+     x=false;
+ }
+    if(nota2>=0 && nota2<=10){
+        x=false;
+        alert(("Média: "+ (nota1+nota2)/2));
+        x=true;
+    } else{
+        x=false;
+        nota1 = parseFloat(prompt("Digite a primeira nota: "));
+    nota2 = parseFloat(prompt("Escreva a segunda nota: "));
+    }
+
+ }
+
+ 
+
+        </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
